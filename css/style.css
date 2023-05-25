@@ -18,6 +18,7 @@
   --customers-link-color: #8e8f99;
   --form-color-text-svg: #2e2f42;
   --form-text-color: #8e8f99;
+  --modal-focus-color: #4d5ae5;
 }
 /*Загальний стиль*/
 body {
@@ -205,7 +206,6 @@ ol {
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   letter-spacing: 0.04em;
-  display: block;
   min-width: 169px;
   padding: 16px 32px;
   gap: 10px;
@@ -545,27 +545,6 @@ ol {
   padding: 72px 24px 24px 24px;
 }
 
-.modal-form {
-  display: block;
-  margin-bottom: 8px;
-}
-.modal-label-text {
-  margin-bottom: 4px;
-  font-size: 12px;
-  line-height: 1.16; /* 14px/12 */
-  letter-spacing: 0.04em;
-  color: var(--form-text-color);
-}
-.modal-form-text {
-  margin-bottom: 16px;
-  font-weight: 500;
-  color: var(--form-color-textsubtitle-svg);
-}
-.modal-input {
-  width: 100%;
-  height: 40px;
-  padding: 11px 16px 11px 38px;
-}
 .close-modal-btn {
   position: absolute;
   right: 24px;
@@ -593,4 +572,140 @@ ol {
 .close-modal-btn:hover .close-modal-svg,
 .close-modal-btn:focus .close-modal-svg {
   fill: var(--btn-active-color-text);
+}
+
+.modal-form-text {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5; /* 24/16 */
+  letter-spacing: 0.04em;
+  margin-bottom: 16px;
+  font-weight: 500;
+  color: var(--form-color-textsubtitle-svg);
+}
+.modal-form {
+  display: block;
+}
+.modal-label {
+}
+.modal-label-text {
+  display: block;
+  font-size: 12px;
+  line-height: 1.16; /* 14px/12 */
+  letter-spacing: 0.04em;
+  color: var(--form-text-color);
+  margin-bottom: 8px;
+}
+.container-input-svg {
+  position: relative;
+  margin-bottom: 8px;
+}
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  fill: var(--form-color-text-svg);
+}
+.svg {
+}
+
+.modal-input {
+  width: 100%;
+  height: 40px;
+  padding: 11px 16px 11px 38px;
+  font-size: 12px;
+  line-height: 1.16; /* 14px/12 */
+  letter-spacing: 0.04em;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-input:focus {
+  outline: none;
+  border-color: var(--modal-focus-color);
+}
+.modal-input:focus + .form-icon {
+  fill: var(--modal-focus-color);
+}
+.modal-textarea {
+  resize: none;
+  width: 100%;
+  height: 120px;
+  padding: 8px 16px;
+  font-size: 12px;
+  line-height: 1.17; /* identical to box height, or 117% */
+  letter-spacing: 0.04em;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 16px;
+}
+.modal-textarea:focus {
+  outline: none;
+  border-color: var(--modal-focus-color);
+}
+.modal-textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.17; /* identical to box height, or 117% */
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
+.checkbox-input {
+  appearance: none;
+  position: absolute;
+}
+.designer-joke {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 16px;
+  width: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  margin-right: 8px;
+  fill: var(--webkit-text-fill-color);
+}
+.designer-joke-svg {
+  opacity: 0;
+}
+.modal-label-text-checkbox {
+  font-size: 12px;
+  line-height: 1.17; /* or 117% */
+  letter-spacing: 0.04em;
+  color: var(--form-text-color);
+}
+.modal-label-checkbox {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.modal-link {
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  color: var(--btn-color);
+}
+.form-btn {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background-color: var(--btn-color);
+  color: var(--btn-active-color-text);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  letter-spacing: 0.04em;
+  min-width: 169px;
+  padding: 16px 32px;
+  gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
