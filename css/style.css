@@ -478,7 +478,7 @@ ol {
 }
 .footer-btn:focus,
 .footer-btn:hover {
-  background-color: var(--btn-active-color);
+  background-color: #31d0aa;
 }
 /*=========== PORTFOLIO MENU ==========*/
 .menu-list {
