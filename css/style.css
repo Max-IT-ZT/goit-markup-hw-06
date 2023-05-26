@@ -399,6 +399,9 @@ ol {
   font-size: 16px;
   font-weight: 500;
 }
+.footer-icons-p {
+  margin-right: 80px;
+}
 .footer-item {
   max-width: 208px;
 }
@@ -425,6 +428,15 @@ ol {
 .bc-link:hover,
 .bc-link:focus {
   background-color: #31d0aa;
+}
+
+.footer-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 16px;
 }
 /*=========== PORTFOLIO MENU ==========*/
 .menu-list {
@@ -669,7 +681,7 @@ ol {
   fill: var(--webkit-text-fill-color);
 }
 .designer-joke-svg {
-  opacity: 0;
+  /* opacity: 0; */
 }
 .modal-label-text-checkbox {
   font-size: 12px;
@@ -682,6 +694,10 @@ ol {
   display: flex;
   align-items: center;
   justify-content: left;
+}
+.checkbox-input:checked + .designer-joke-svg {
+  opacity: 1;
+  background-color: var(--btn-active-color);
 }
 .modal-link {
   font-size: 12px;
