@@ -443,17 +443,15 @@
           <p class="footer-sub-text">Subscribe</p>
           <form class="footer-form">
             <label class="footer-label">
-              <input class="footer-input" type="mail" placeholder="E-mail" />
+              <input class="footer-input" type="email" placeholder="E-mail" />
             </label>
+            <button type="submit" class="footer-btn">
+              Subscribe
+              <svg class="footer-btn-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-frame"></use>
+              </svg>
+            </button>
           </form>
-        </div>
-        <div class="">
-          <button type="submit" class="footer-btn">
-            <p>Subscribe</p>
-            <svg class="footer-btn-svg" width="24" height="24">
-              <use href="./images/icons.svg#icon-frame"></use>
-            </svg>
-          </button>
         </div>
       </div>
     </footer>
@@ -469,56 +467,61 @@
           Leave your contacts and we will call you back
         </p>
         <form class="modal-form">
-          <label id="text-id" class="modal-label">
-            <span class="modal-label-text">Name</span>
-          </label>
-          <div class="container-input-svg">
-            <input
-              form="text-id"
-              type="text"
-              class="modal-input"
-              name="name"
-              required
-              pattern="^[a-zA-Zа-яА-Яї-Їє-Єі-І]+$"
-              minlength="2"
-            />
-            <svg class="form-icon" height="18" width="24">
-              <use class="svg" href="./images/icons.svg#icon-name"></use>
-            </svg>
+          <div class="modal-form-main-container">
+            <label for="text-id" class="modal-label">
+              <span class="modal-label-text">Name</span>
+            </label>
+            <div class="container-input-svg">
+              <input
+                id="text-id"
+                type="text"
+                class="modal-input"
+                name="name"
+                required
+                pattern="^[a-zA-Zа-яА-Яї-Їє-Єі-І]+$"
+                minlength="2"
+              />
+              <svg class="form-icon" height="18" width="24">
+                <use class="svg" href="./images/icons.svg#icon-name"></use>
+              </svg>
+            </div>
           </div>
-          <label id="phone-id" class="modal-label">
-            <span class="modal-label-text">Phone</span>
-          </label>
-          <div class="container-input-svg">
-            <input
-              form="phone-id"
-              type="tel"
-              class="modal-input"
-              name="phone"
-              required
-              pattern="^[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-              title="xxx-xxx-xx-xx"
-            />
-            <svg class="form-icon" height="18" width="24">
-              <use class="svg" href="./images/icons.svg#icon-phone"></use>
-            </svg>
+          <div class="modal-form-main-container">
+            <label for="phone-id" class="modal-label">
+              <span class="modal-label-text">Phone</span>
+            </label>
+            <div class="container-input-svg">
+              <input
+                id="phone-id"
+                type="tel"
+                class="modal-input"
+                name="phone"
+                required
+                pattern="^[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+              />
+              <svg class="form-icon" height="18" width="24">
+                <use class="svg" href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
-          <label id="mail-id" class="modal-label">
-            <span class="modal-label-text">Email</span>
-          </label>
-          <div class="container-input-svg">
-            <input
-              form="mail-id"
-              type="mail"
-              class="modal-input"
-              name="mail"
-              required
-            />
-            <svg class="form-icon" height="18" width="24">
-              <use class="svg" href="./images/icons.svg#icon-email"></use>
-            </svg>
+          <div class="modal-form-main-container">
+            <label for="mail-id" class="modal-label">
+              <span class="modal-label-text">Email</span>
+            </label>
+            <div class="container-input-svg">
+              <input
+                id="mail-id"
+                type="email"
+                class="modal-input"
+                name="mail"
+                required
+              />
+              <svg class="form-icon" height="18" width="24">
+                <use class="svg" href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
           </div>
-
           <label class="modal-label">
             <span class="modal-label-text">Comment</span>
             <textarea
@@ -529,15 +532,16 @@
           </label>
           <label class="modal-label-checkbox">
             <input class="checkbox-input" type="checkbox" />
-            <span class="designer-joke">
-              <svg class="designer-joke-svg" width="10" height="8">
-                <use href="./images/icons.svg#icon-vector"></use>
-              </svg>
+            <svg class="designer-joke-svg" width="10" height="8">
+              <use
+                class="custum-svg"
+                href="./images/icons.svg#icon-vector"
+              ></use>
+            </svg>
+            <span>
+              I accept the terms and conditions of the
+              <a class="modal-link" href="">Privacy Policy</a>
             </span>
-            <span class="modal-label-text-checkbox"
-              >I accept the terms and conditions of the
-              <a class="modal-link" href=""> Privacy Policy </a></span
-            >
           </label>
           <button type="submit" class="form-btn">Send</button>
         </form>
