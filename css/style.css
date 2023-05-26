@@ -705,7 +705,7 @@ ol {
   letter-spacing: 0.04em;
   line-height: 1.17; /* identical to box height, or 117% */
   color: rgba(46, 47, 66, 0.4);
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.2);
   border-radius: 4px;
   background-color: transparent;
   outline: transparent;
@@ -758,7 +758,7 @@ ol {
   background-color: var(--modal-focus-color);
   border: none;
   fill: #ffffff;
-  border-color: #404bbf;
+  background-color: #404bbf;
 }
 .checkbox-input:checked + .modal-label-checkbox .designer-joke .custum-svg {
   opacity: 1;
