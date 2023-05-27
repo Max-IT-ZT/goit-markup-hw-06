@@ -649,17 +649,8 @@ ol {
   display: block;
   margin-bottom: 4px;
 }
-/* .modal-label-text {
-  display: block;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.04em;
-  color: var(--form-text-color);
-  margin-bottom: 8px;
-} */
 .container-input-svg {
   position: relative;
-  margin-bottom: 8px;
 }
 .form-icon {
   position: absolute;
